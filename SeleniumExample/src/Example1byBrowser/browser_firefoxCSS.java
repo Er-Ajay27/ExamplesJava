@@ -55,7 +55,8 @@ public class browser_firefoxCSS {
 			  	System.out.println(" "); 
 			  }
 		  
-		  Toolkit.getDefaultToolkit().beep(); System.out.println("End of code");
+		  Toolkit.getDefaultToolkit().beep(); 
+		  System.out.println("End of code");
 		 
 	}
 

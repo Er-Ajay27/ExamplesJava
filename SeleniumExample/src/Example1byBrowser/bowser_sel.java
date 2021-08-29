@@ -24,7 +24,7 @@ public class bowser_sel {
 		
 		WebElement jt= driver.findElement(By.xpath("//select[@name='UserTitle']"));
 		Select jobtitle = new Select(jt);
-		jobtitle.selectByIndex(4);
+		jobtitle.selectByIndex(3);
 		Thread.sleep(2000);
 		
 		WebElement selected = jobtitle.getFirstSelectedOption();
@@ -33,26 +33,27 @@ public class bowser_sel {
 		Thread.sleep(3000);
 		
 		
-		jobtitle.selectByVisibleText("Sales Manager"); 	
-		Thread.sleep(3000);
-		jobtitle.selectByValue("Customer_Service_Manager_AP");		
-		Thread.sleep(3000);
-		jobtitle.selectByIndex(5); 		
-		Thread.sleep(2000);
 		
-		System.out.println("- - - - - - - - - - -");
-		//List<WebElement> jobtitle_options = jobtitle.getOptions();
-		List<WebElement> jobtitle_options = jobtitle.getOptions();
-		for(WebElement titlename : jobtitle_options)
-			System.out.println(titlename.getText());
-	
-		Thread.sleep(2000);
-		
-		List<WebElement> label_elemet = driver.findElements(By.tagName("label"));
-		for(WebElement element : label_elemet)
-			System.out.println(element.getText());
-		
-		//Weblement selected =c
+		  jobtitle.selectByVisibleText("Sales Manager"); 
+		  Thread.sleep(3000);
+		  jobtitle.selectByValue("Customer_Service_Manager_AP"); 
+		  Thread.sleep(3000);
+		  jobtitle.selectByIndex(5); 
+		  Thread.sleep(2000);
+		  
+		  System.out.println("- - - - - - - - - - -");
+		  
+		  List<WebElement> jobtitle_options = jobtitle.getOptions(); 
+		  for(WebElement titlename : jobtitle_options) 
+			  System.out.println(titlename.getText());
+		  
+		  Thread.sleep(2000);
+		  
+		  List<WebElement> label_elemet = driver.findElements(By.tagName("label"));
+		  for(WebElement element : label_elemet) 
+			  System.out.println(element.getText());
+		  
+		 
 		
 		driver.close();
 	}
