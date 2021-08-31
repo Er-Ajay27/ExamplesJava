@@ -10,6 +10,8 @@ public class FlipkartSElenium  {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver","D:\\fire\\geckodriver.exe");
 		
+		float b =1/2f;
+		System.out.println(b);
 		FlipSelenium f = new FlipSelenium();
 		f.GotoFlipkart();
 		f.TypeAndSearch();
