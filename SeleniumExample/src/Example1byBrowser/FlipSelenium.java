@@ -48,6 +48,9 @@ public class FlipSelenium {
 		driver.switchTo().window(chId);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("(//li[@class='col col-6-12'])[1]")).click();
+		Thread.sleep(2000);
+		driver.switchTo().window(parentId);
+		System.out.println(driver.getTitle());
 		
 	}
 	
